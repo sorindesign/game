@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Site Prototype</title>
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <style>
+      canvas {
+          border:1px solid #d3d3d3;
+          background-color: #f1f1f1;
+      }
+    </style>
+  </head>
+  <body onload="startGame()">
+    <h1>Site Prototype</h1>
+    <img src="images/dolphin.jpg" alt="Dolphin picture">
+
+    <p></p>
+
+    <h2>Dynamics</h2>
+      <div style="text-align:left;width:480px;">
+        <button onclick="moveup()">V_speed Up</button>
+        <button onclick="movedown()">V_speed Down</button><br>
+        <button onclick="moveleft()">H_speed Up</button>
+        <button onclick="moveright()">H_speed Down</button><br>
+      </div>
+
+    <button>Change user</button>
+    <script src="scripts/movegame.js"></script>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
